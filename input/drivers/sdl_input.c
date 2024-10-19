@@ -380,6 +380,7 @@ static void sdl_input_poll(void *data)
 
    sdl_poll_mouse(sdl);
 
+#ifndef MIYOO
 #ifdef HAVE_SDL2
    while (SDL_PeepEvents(&event, 1,
             SDL_GETEVENT, SDL_KEYDOWN, SDL_MOUSEWHEEL) > 0)
@@ -460,6 +461,7 @@ static void sdl_input_poll(void *data)
       }
 #endif
    }
+#endif
 }
 
 static uint64_t sdl_get_capabilities(void *data)
