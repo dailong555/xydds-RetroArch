@@ -124,7 +124,7 @@ DEF_FLAGS += -I. -Ideps -Ideps/stb -DMIYOO=1 -DDINGUX -MMD -DARM -mcpu=cortex-a7
 DEF_FLAGS += -Wall -Wno-unused-variable -flto
 DEF_FLAGS += -std=gnu99 -D_GNU_SOURCE
 LIBS := -ldl -lz -lrt -pthread -lasound
-CFLAGS :=
+CFLAGS := -Ofast -fsingle-precision-constant
 CXXFLAGS := -fno-exceptions -fno-rtti -std=c++11 -D__STDC_CONSTANT_MACROS
 ASFLAGS :=
 LDFLAGS := -Wl,--gc-sections

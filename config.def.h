@@ -364,7 +364,7 @@
 #define DEFAULT_DISABLE_COMPOSITION false
 
 /* Video VSYNC (recommended) */
-#define DEFAULT_VSYNC true
+#define DEFAULT_VSYNC false
 
 /* Vulkan specific */
 #define DEFAULT_MAX_SWAPCHAIN_IMAGES 3
@@ -541,7 +541,7 @@
 #if defined(DINGUX)
 /* Enables aspect ratio correction (1:1 PAR) when
  * using the IPU hardware scaler in Dingux devices */
-#define DEFAULT_DINGUX_IPU_KEEP_ASPECT true
+#define DEFAULT_DINGUX_IPU_KEEP_ASPECT false
 /* Sets image filtering method when using the
  * IPU hardware scaler in Dingux devices */
 #if defined(RETROFW)
